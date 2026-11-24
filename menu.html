@@ -3,9 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="Italian Riviera inspired dining experience" name="description">
+    <title>
+      The Menu | Luna di Portofino
+    </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link crossorigin="" rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;display=swap">
+   <link rel="stylesheet" href="style (1).css">
 </head>
-<body>
-    
+<body data-page="menu">
+    <header class="site-header" id="top">
+        <a href="index (1).html" class="brand">
+            <span>
+                LUNA
+                <small>
+                    DO PORTOFINO
+                </small>
+            </span>
+        </a>
+        <button aria-expanded="false" aria-label="Toggle navigation" class="nav-toggle">
+            MENU
+        </button>
+        <nav aria-label="Main navigation " class="nav-links">
+            <a href="index (1).html" data-nav="Home">
+                Home
+            </a>
+             <a href="menu.html" data-nav="home">
+                The Menu
+            </a> 
+            <a href="about.html" data-nav="about">
+                About Us
+            </a>
+               <a href="login.html" data-nav="login">
+                Sign In
+            </a>
+            <a href="register.html" data-nav="register" class="nav-cta"> 
+                Join the Club
+                <span>
+                &nearrow;
+                </span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="inner-hero menu-hero" style="background-image: linear-gradient(90deg,rgba(14,35,28,.84)),url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=900&amp;q=85');">
+          <div class="inner-hero-content">
+            <span class="eyebrow light">
+                FATTO CON AMORE &middot; MADE WITH LOVE
+            </span>
+                <h1>
+                    A taste of
+                    <em>
+                        Italy.
+                    </em>
+                </h1>
+                <p>
+                    From the first bite of antipasti to the last spoonful of tiramisu&ugrave;, discover dishes that celebrate the ingredients,traditions, and generous spirit of Italian cooking.
+                </p>
+          </div>
+        </section>
+        <section class="section menu-intro">
+            <div class="section-heading center">
+                <span class="eyebrow">
+                    01 / THE MENU
+                </span> 
+                <H2>
+                    Choose your
+                    <em>
+                        craving.
+                    </em>
+                </H2>
+                <p>
+                    Every dish is a love letter to Italy.Explore the collection,filter by course, and tap the heart to save something for later.
+                </p>
+            </div>
+            <div class="menu-toolbar">
+                <div aria-label="Filter menu" class="filter-buttons" role="group" >
+                    <button class="filter-btn selected " data-filter="ALL">
+                        ALL
+                    </button>
+                    <button class="filter-btn" data-filter="Antipasti">
+                        Antipasti
+                    </button>
+                    <button class="filter-btn" data-filter="Pasta &amp; Drinks">
+                    Pasta &amp; Risotto
+                    </button>
+                    <button class="filter-btn" data-filter="Pizza">
+                        Pizza
+                    </button>
+                      <button class="filter-btn" data-filter="Dal Mare">
+                        Dal Mare
+                      </button>
+                     <button class="filter-btn" data-filter="Dolci &amp;Drinks">
+                        Dolci &amp;Drinks
+                     </button> 
+                </div>
+               <div class="menu-search">
+                <span>
+                    &telrec;
+                </span>
+                <input type="search" placeholder="Search a dish..." id="dish-search" aria-label="Search dishes">
+               </div>
+            </div>
+            <div class="menu-resuly-line">
+                <span id="menu-count">
+                    Showing all 15 dishes
+                </span>
+                <button class="favorites-filter" id="show-favorites">
+                    My favorites(
+                        <span id="favorite-count">
+                            0
+                        </span>
+                    )
+                </button>
+            </div>
+            <div class="dish-grid " id="dish-grid">
+                <article class="dish-card reveal" data-category="Antipasti" data-name="bruschetta al pomodoro">
+                    <div class="dish-photo">
+                        <img  alt="Bruschetta al Pomodoro" class="" loading="lazy" onerror="this.classList.add('image-error')" src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=900&amp;q=85">
+                        <button aria-label="Save Bruschetta al Pomodoro to favorites" aria-pressed="false" class="favorite-btn" data-favorites="Bruschetta al Pomodoro">
+                            Save
+                        </button>
+                    </div>
+                    <div class="dish-details">
+                        <div class="dish-top">
+                            <span class="dish-category">
+                                ANTIPASTI &middot;VEGATARIAN
+                            </span>
+                            <span class="dish-price">
+                                &euro;12
+                            </span>
+                        </div>
+                        <h3>
+                        Bruschetta al Pomodoro
+                    </h3>
+                    <p>
+                        Toasted rustic bread topped with vine-ripened tomatos, fresh basil,garlic, and extra-virgin olive oil.
+                    </p>
+                    <button class="dish-action" data-favorites="Bruschetta al POmodoro">
+                        Save to favorites
+                        <span>
+                            &nearrow;
+                        </span>
+                    </button>
+                    </div>
+                </article>
+                <article class="dish-card reveal" data-category="Antipasti" data-name="insalata caprese">
+                    <div class="dish-photo">
+                        <img  class="" alt="Insalata Caprese" loading="lazy" onerror="this.classList.add('image-error')" src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=900&amp;q=85">
+                    <button aria-label="Save Insalata Caprese to favorites" aria-pressed="false" class="favorite-btn" data-favorites="Insalata Caprese">
+                        Save
+                    </button>
+                    </div>
+                    <div class="div-details">
+                        <div class="div-top">
+                            <span class="dish-category">
+                                ANTIPASTI &middot; VEGETARIAN
+                            </span>
+                            <span class="dish-price">
+                                &euro;14
+                            </span>
+                        </div>
+                        <h3>
+                            Insalata Caprese
+                        </h3>
+                        <p>
+                            Creamy mozzarela , ripe tomatoes, fragrant basil leaves, sea salt, and a genarous drizzle of Ligurian olive oil.
+                        </p>
+                        <button class="dish-action" data-favorites="Insalata Caprese">
+                            Save to favorites
+                            <span>
+                                &nearrow;
+                            </span>
+                        </button>
+                    </div>
+                </article>
+                <article class="dish-card reveal" data-category="Antipasti" data-name="gamberi al limone">
+                    <div class="dish-photo">
+                        <img  alt="">
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
